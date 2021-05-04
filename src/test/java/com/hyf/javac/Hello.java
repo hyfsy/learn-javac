@@ -1,8 +1,5 @@
 package com.hyf.javac;
 
-import com.hyf.bytecode.GenerateEntities;
-import com.hyf.bytecode.GenerateEntity;
-
 /**
  * 完整命令行命令：
  * javac src\test\java\com\hyf\javac\*.java -processor com.hyf.bytecode.CustomProcessor -classpath "E:\study\idea3\learn-javac\target\classes;" -encoding UTF-8
@@ -26,10 +23,6 @@ import com.hyf.bytecode.GenerateEntity;
  * @author baB_hyf
  * @date 2021/04/14
  */
-@GenerateEntities({
-        @GenerateEntity(value = "test_generate", packageName = "aaaa"),
-        @GenerateEntity(value = "test_generate2", packageName = "com.hyf.aaa")
-})
 public class Hello {
 
     public static void main(String[] args) {
